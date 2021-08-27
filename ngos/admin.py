@@ -1,3 +1,7 @@
 from django.contrib import admin
+from ngos.models import Ngo
 
-# Register your models here.
+
+@admin.register(Ngo)
+class NgoAdmin(admin.ModelAdmin):
+    ...
